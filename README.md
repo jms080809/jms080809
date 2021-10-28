@@ -1,6 +1,4 @@
-<div style="background-image:url("https://365psd.com/images/istock/previews/1015/101530599-blue-diagonal-check-plaid-seamless-pattern.jpg");">
-    <h1>JMS080809 - 만1성질환</h1>
-</div>
+# jms080809 - 만1성질환
 ## SNS
 
 [![facebook](https://img.shields.io/badge/facebook-1877F2?&style=for-the-badge&logo=Facebook&logoColor=FFFFFF)](https://www.facebook.com/MR.MINSUNG/)
