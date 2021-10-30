@@ -5,7 +5,7 @@
 [![github](https://img.shields.io/badge/-github-000000?style=for-the-badge&logo=Github&logoColor=FFFFFF)](https://github.com/jms080809)
 
 ### Stats
-> [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=jms080809)](https://github.com/anuraghazra/github-readme-stats)
+> [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=jms080809&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)
 
 ### Most Used
-> [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jms080809)](https://github.com/anuraghazra/github-readme-stats)
+> [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jms080809&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)
