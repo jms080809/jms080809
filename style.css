@@ -1,0 +1,117 @@
+/*Color Palette: https://colorhunt.co/palette/3c467b50589c636ccb6e8cfb */
+/* lava lamp bubble box background color
+  background: radial-gradient(
+    #6e8cfb 0%,
+    #6e8cfb 10.5%,
+    #4a69d6 20.5%,
+    #4a69d6 24.5%,
+    #32458b 30.5%,
+    #32458b 20%,
+    #111f35 60.3%,
+    #111f35 100%
+  ); */
+* {
+  --glass-color: rgb(245, 245, 245);
+  --text-shadow-color: rgba(0, 0, 0, 0.8);
+  --title-color: aliceblue;
+  --border-color: aliceblue;
+  --font-color: #1a1f2b;
+  font-family: "SejongGeulggot";
+  letter-spacing: 3px;
+  /* pointer-events:stroke; */
+}
+
+@font-face {
+  font-family: "SejongGeulggot";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/SejongGeulggot.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #0d1626;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.glass {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px rgb(240, 248, 255) solid;
+  border-radius: 10px;
+  max-width: 45%;
+  min-width: 400px;
+  background-color: rgba(240, 248, 255, 0.35);
+  backdrop-filter: blur(10px);
+}
+.glass > .container {
+  margin: 20px;
+}
+
+.glass > .container > header {
+  margin-top: 10px;
+  color: var(--font-color);
+}
+.glass > .container > header > img {
+  display: block;
+  border: 1px solid var(--border-color);
+  border-radius: 100px;
+}
+.glass > .container > header > h1 {
+  color: var(--title-color);
+  font-weight: 400;
+  text-shadow: 2px 2px var(--text-shadow-color);
+  margin: 0;
+  padding-top: 2px;
+}
+
+h2 {
+  color: var(--title-color);
+  font-weight: 400;
+  text-shadow: 2px 2px var(--text-shadow-color);
+  padding-top: 2px;
+  width: fit-content;
+  margin-left: 8px;
+}
+
+.item {
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--font-color);
+}
+.item .a {
+  width: max-content;
+  height: max-content;
+}
+.item:hover {
+  cursor: pointer;
+  border: 1px solid #3f69ff;
+}
+
+.background {
+  position: absolute;
+  justify-content: center;
+  height: max-content;
+}
+.lamps {
+  display: flex;
+  background: linear-gradient(
+    180deg,
+    /* 아래에서 위로 올라가는 방향 유지 */ #111f35 0%,
+    /* [추가] 바닥 시작 지점을 가장 어둡게 설정 */ #111f35 20%,
+    /* 하단 어두운 영역 비중 확보 */ #32458b 45%,
+    /* 중간에서 빛이 서서히 시작됨 */ #4a69d6 70%,
+    /* 램프 근처의 밝은 빛 */ #5e78d4 100% /* 가장 상단(램프 광원) */
+  );
+  background-attachment: fixed;
+}
