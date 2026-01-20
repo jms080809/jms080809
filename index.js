@@ -158,6 +158,27 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   tl.seek(120);
   tl.timeScale(2);
+  //gsap profile name animation
+
+  // Split text into spans for staggered animation
+  headerH1 = document.querySelector("#profile-name");
+  headerH1.innerHTML = headerH1.textContent
+    .split("")
+    .map((char) => `<span>${char}</span>`)
+    .join("");
+
+  gsap.from(headerH1.querySelectorAll("span"), {
+    scrollTrigger: {
+      trigger: headerH1,
+      start: "top 85%",
+      end: "top 35%",
+      scrub: true,
+    },
+    opacity: 0,
+    y: 50,
+    duration: 0.5,
+    stagger: 0.1,
+  });
 });
 
 //easter egg
@@ -197,7 +218,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
   const asciiIP = bigIP.join("\n");
 
-  console.clear();
+  // console.clear();
   console.log(
     `
 %c
